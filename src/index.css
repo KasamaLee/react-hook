@@ -7,3 +7,50 @@ body {
   margin: 0;
   box-sizing: inherit;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.header {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 450px;
+}
+
+.search > * {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.search > input:focus {
+  outline: none;
+}
+
+.search > button {
+  background: #1ad1af;
+  cursor: pointer;
+}
+
+.movie-lists {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.movie {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
